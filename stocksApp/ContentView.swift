@@ -15,10 +15,16 @@ struct ContentView: View {
             PortfolioCard()
         
                 HStack{
+
+            Text("Watchlist")                        .foregroundColor(Color.mycolor)
+                        .bold()
+                        .font(.title)
+
                     Text("Watchlist")
                         .foregroundColor(Color.mycolor)
                         .bold()
                         .font(.title)
+
                     Spacer()
                 }
             VStack{
