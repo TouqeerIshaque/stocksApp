@@ -18,7 +18,7 @@ struct ContentView: View {
 
          
 
-                    Text("Watchlist name")
+                    Text("Watchlist name touqeer")
                         .foregroundColor(Color.mycolor)
                         .bold()
                         .font(.title)
