@@ -16,11 +16,9 @@ struct ContentView: View {
         
                 HStack{
 
-            Text("Watchlist")                        .foregroundColor(Color.mycolor)
-                        .bold()
-                        .font(.title)
+         
 
-                    Text("Watchlist")
+                    Text("Watchlist name")
                         .foregroundColor(Color.mycolor)
                         .bold()
                         .font(.title)
