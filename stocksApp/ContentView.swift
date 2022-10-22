@@ -8,9 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isshowingStocksheet : Bool = true ;
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            HeaderView(showSheet :$isshowingStocksheet).padding()
+            PortfolioCard()
+        
+                HStack{
+                    Text("Watchlist")
+                        .foregroundColor(Color.mycolor)
+                        .bold()
+                        .font(.title)
+                    Spacer()
+                }
+            VStack{
+            ScrollView{
+            StockCards()
+                Spacer()
+            StockCards()
+                Spacer()
+            StockCards()
+                Spacer()
+            StockCards()
+            }
+            }
+        }.padding()
+            .edgesIgnoringSafeArea(.bottom)
+            .sheet(isPresented: $isshowingStocksheet){  Text("Search")  }
+        
+        
     }
 }
 
